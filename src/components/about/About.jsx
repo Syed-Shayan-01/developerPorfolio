@@ -20,19 +20,18 @@ const About = () => {
           <h1 className=" text-[4rem] font-bold ">About</h1>
 
           <div>
-            
-              <div className=" text-3xl text-gray-400">
-                I,AM A FRONT-END WEB DEVELOPER
-              </div>
-              <span className="flex items-center text-[3rem] my-3  space-x-5 cursor-pointer text-gray-400">
-                <AiFillHtml5 className=" hover:text-blue-500" />
-                <FaCss3Alt className=" hover:text-blue-500" />
-                <IoLogoJavascript className=" hover:text-blue-500" />
-                <TbBrandNextjs className=" hover:text-blue-500" />
-                <AiFillGithub className=" hover:text-blue-500" />
-                <BiLogoTailwindCss className=" hover:text-blue-500" />
-              </span>
-              <ol className=" font-sans">
+            <div className=" text-3xl text-gray-400">
+              I,AM A FRONT-END WEB DEVELOPER
+            </div>
+            <span className="flex items-center text-[3rem] my-3  space-x-5 cursor-pointer text-gray-400">
+              <AiFillHtml5 className=" hover:text-blue-500" />
+              <FaCss3Alt className=" hover:text-blue-500" />
+              <IoLogoJavascript className=" hover:text-blue-500" />
+              <TbBrandNextjs className=" hover:text-blue-500" />
+              <AiFillGithub className=" hover:text-blue-500" />
+              <BiLogoTailwindCss className=" hover:text-blue-500" />
+            </span>
+            <ol className=" font-sans">
               <li className="text-2xl  text-gray-500">
                 <GiBulletImpacts className="  text-2xl  text-yellow-500 inline-flex items-center" />{" "}
                 I design front-end in terms of user interface
@@ -49,7 +48,10 @@ const About = () => {
             </ol>
           </div>
         </div>
-      </section>
+
+        {/* Bottom Line */}
+      </section> 
+      <div className="h-0.5 w-[max] m-40 bg-gray-400"></div>
     </div>
   );
 };

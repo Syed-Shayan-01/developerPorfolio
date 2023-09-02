@@ -1,5 +1,7 @@
 import Button from "@/components/Button";
 import About from "@/components/about/About";
+import Contact from "@/components/contact/Contact";
+import Footer from "@/components/footer/Footer";
 import Project from "@/components/projects/Project";
 import Link from "next/link";
 
@@ -19,7 +21,7 @@ export default function Home() {
             <ul className="flex justify-center items-center text-white space-x-20 mr-10 hover:cursor-pointer text-lg">
               <li className="hover:text-purple-500"><Link href={'#about'}>Skills</Link></li>
               <li className="hover:text-purple-500"><Link href={'#Projects'}>Projects</Link></li>
-              <li className="hover:text-purple-500">Contact us</li>
+              <li className="hover:text-purple-500"><Link href={'#Contact'}>Contact us</Link></li>
             </ul>
           </nav>
         </header>
@@ -35,11 +37,10 @@ export default function Home() {
             <span className="text-xl mt-10 p-2 hover:text-indigo-100 ">
               I,am Passionate Front-End Web Developer
             </span>
-            <div className="p-2 w-3/4 text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos, reiciendis similique natus eveniet quaerat
-              inventore ipsa repellendus eum aliquid nostrum sit. Voluptatem,
-              aliquid!
+            <div className="p-2 w-2/3 text-xl font-sans">
+              I possess one year of experience in HTML, CSS, JavaScript,
+              Git/GitHub, Tailwind CSS, and Next.js, enabling me to create
+              dynamic and responsive web applications with proficiency.
             </div>
             <Button text={"Download Cv"} />
           </div>
@@ -72,8 +73,10 @@ export default function Home() {
         </div>
       </section>
 
-     <About />
-  <Project />
+      <About />
+      <Project />
+      <Contact />
+      <Footer />
     </>
   );
 }
