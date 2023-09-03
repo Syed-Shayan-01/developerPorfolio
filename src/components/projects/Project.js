@@ -49,6 +49,8 @@ const Project = () => {
                         </li>
                     </ol>
                 </div>
+
+                <div className='flex justify-center my-32'>Check out my github to watch more projects....................</div>
             </div>
         </>
     )

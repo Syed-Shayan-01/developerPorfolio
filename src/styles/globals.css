@@ -51,3 +51,14 @@ html {
 .custom-shape-divider-bottom-1693121354 .shape-fill {
   fill: #ffffff;
 }
+
+
+.logo {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #007BFF; /* Change the color as desired */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}

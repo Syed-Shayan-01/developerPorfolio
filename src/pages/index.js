@@ -2,26 +2,27 @@ import Button from "@/components/Button";
 import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
+import Logo from "@/components/logo/Logo";
 import Project from "@/components/projects/Project";
+import Media from "@/components/socialMedia/Media";
 import Link from "next/link";
+import { Fragment } from "react";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
-    <>
-      <div className="bg-black">
+    <Fragment id="/">
+      <div className="bg-black" >
         <header className="flex justify-between items-center p-10">
           <div>
-            <span className="logo text-2xl  font-bold text-purple-700  drop-shadow-xl">
-              Syed Shayan
-            </span>
+            <Logo />
           </div>
 
           <nav>
-            <ul className="flex justify-center items-center text-white space-x-20 mr-10 hover:cursor-pointer text-lg">
-              <li className="hover:text-purple-500"><Link href={'#about'}>Skills</Link></li>
-              <li className="hover:text-purple-500"><Link href={'#Projects'}>Projects</Link></li>
-              <li className="hover:text-purple-500"><Link href={'#Contact'}>Contact us</Link></li>
+            <ul className="flex justify-center items-center text-white space-x-20 mr-10 hover:cursor-pointer text-[1.5rem]">
+              <li className="hover:text-blue-500 duration-500"><Link href={'#about'}>Skills</Link></li>
+              <li className="hover:text-blue-500 duration-500"><Link href={'#Projects'}>Projects</Link></li>
+              <li className="hover:text-blue-500 duration-500"><Link href={'#Contact'}>Contact us</Link></li>
             </ul>
           </nav>
         </header>
@@ -75,9 +76,10 @@ export default function Home() {
 
       <About />
       <Project />
+      <Media />
       <Contact />
       <Footer />
-    </>
+    </Fragment>
   );
 }
 
