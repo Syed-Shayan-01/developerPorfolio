@@ -15,7 +15,7 @@ export default function Home() {
       <div className="bg-black" >
         <header className="flex justify-between items-center p-10">
           <div>
-            <Logo />
+            <Logo text={'Syed SHayan'} />
           </div>
 
           <nav>
@@ -29,16 +29,15 @@ export default function Home() {
       </div>
       {/* new section */}
       <section className="pb-32  relative bg-black">
-        <div className=" text-white flex justify-around items-center space-x-52 p-10">
+        <div className=" text-white flex justify-around items-center  p-10">
           <div className="left ml-24">
-            <div className="text-4xl w-80 mt-20 font-bold p-2">
-              {" "}
-              Hello My Name Syed Shayan
+            <div className="text-5xl w-80 mt-20 mb-4 p-2">
+              Hello I,AM <Logo text={'syed shayan'} />
             </div>
-            <span className="text-xl mt-10 p-2 hover:text-indigo-100 ">
+            <span className="text-xl  text-gray-300 mt-10 uppercase p-2">
               I,am Passionate Front-End Web Developer
             </span>
-            <div className="p-2 w-2/3 text-xl font-sans">
+            <div className="p-2 w-2/3 uppercase text-xl text-gray-200 font-sans">
               I possess one year of experience in HTML, CSS, JavaScript,
               Git/GitHub, Tailwind CSS, and Next.js, enabling me to create
               dynamic and responsive web applications with proficiency.
@@ -46,10 +45,10 @@ export default function Home() {
             <Button text={"Download Cv"} />
           </div>
 
-          <div className="right w-2/3 mt-10">
+          <div className="right mt-10">
             <video
               src="/Images/hero.mp4"
-              className="h-full w-80  rounded"
+              className="h-full w-[100vh]  rounded"
               loop
               autoPlay
               muted

@@ -4,13 +4,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Logo from '../logo/Logo';
 const Project = () => {
     return (
         <>
             <div id="Projects">
-                <div className=" text-5xl text-gray-600 drop-shadow-md
-                 font-sans font-bold flex justify-center my-40">
-                    Projects
+                <div className=" text-5xl drop-shadow-md
+                 flex justify-center my-40">
+                    <Logo text={'Projects'} />
                 </div>
                 <div>
                     <ol className='flex justify-around items-center'>
@@ -50,7 +51,7 @@ const Project = () => {
                     </ol>
                 </div>
 
-                <div className='flex justify-center my-32'>Check out my github to watch more projects....................</div>
+                <div className='flex justify-center my-32 hover:scale-110 hover:text-blue-600 font-bold duration-300'>Check out my github to watch more projects....................</div>
             </div>
         </>
     )
