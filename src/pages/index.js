@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Button from "@/components/Button";
 import About from "@/components/about/About";
 import Contact from "@/components/contact/Contact";
@@ -6,52 +7,82 @@ import Logo from "@/components/logo/Logo";
 import Project from "@/components/projects/Project";
 import Media from "@/components/socialMedia/Media";
 import Link from "next/link";
-import { Fragment } from "react";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useRouter } from "next/router";
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
+  const router = useRouter();
+
+  const cvDownload = () => {
+    toast.info('lets open the resume!', {
+      position: "top-left",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    })
+    setTimeout(() => {
+      router.replace('https://drive.google.com/file/d/12FxOY4YnwjT3ZGYSHnCA2_eysES31X2G/view?usp=drive_link')
+    }, 1500);
+  }
+
   return (
-    <Fragment id="/">
-      <div className="bg-black" >
-        <header className="flex justify-between items-center p-10">
-          <div>
+    <div id="/">
+      <div className="bg-black">
+        <header className="flex justify-between items-center p-10 flex-col md:flex-row max-md:justify-center">
+          <div className="text-sm text-center">
             <Logo text={'Syed SHayan'} />
           </div>
 
           <nav>
-            <ul className="flex justify-center items-center text-white space-x-20 mr-10 hover:cursor-pointer text-[1.5rem]">
-              <li className="hover:text-blue-500 duration-500"><Link href={'#about'}>Skills</Link></li>
-              <li className="hover:text-blue-500 duration-500"><Link href={'#Projects'}>Projects</Link></li>
-              <li className="hover:text-blue-500 duration-500"><Link href={'#Contact'}>Contact us</Link></li>
+            <ul className="flex flex-col md:flex-row justify-center items-center text-white md:space-x-20 hover:cursor-pointer text-[1.5rem]">
+              <li className="hover:text-blue-500 duration-500">
+                <Link href={'#about'}>Skills</Link>
+              </li>
+              <li className="hover:text-blue-500 duration-500">
+                <Link href={'#Projects'}>Projects</Link>
+              </li>
+              <li className="hover:text-blue-500 duration-500">
+                <Link href={'#Contact'}>Contact us</Link>
+              </li>
             </ul>
           </nav>
         </header>
       </div>
+      {/* End Header Section */}
+
       {/* new section */}
-      <section className="pb-32  relative bg-black">
-        <div className=" text-white flex justify-around items-center  p-10">
-          <div className="left ml-24">
-            <div className="text-5xl w-80 mt-20 mb-4 p-2">
-              Hello I,AM <Logo text={'syed shayan'} />
+      <section className="pb-32 relative bg-black">
+        <div className="text-white flex justify-around items-center p-10 max-lg:flex-col">
+          <div className="left ml-4 md:ml-24">
+            <div className="text-3xl md:text-5xl mt-4 md:mt-20 mb-4 p-2">
+              Hello I, AM <Logo text={'syed shayan'} />
             </div>
-            <span className="text-xl  text-gray-300 mt-10 uppercase p-2">
-              I,am Passionate Front-End Web Developer
+            <span className="text-lg md:text-xl text-gray-300 mt-6 md:mt-10 uppercase p-2">
+              I am a Passionate Front-End Web Developer
             </span>
-            <div className="p-2 w-2/3 uppercase text-xl text-gray-200 font-sans">
+            <div className="p-2 lg:w-3/4 text-base md:text-lg text-gray-200 font-sans">
               I possess one year of experience in HTML, CSS, JavaScript,
               Git/GitHub, Tailwind CSS, and Next.js, enabling me to create
               dynamic and responsive web applications with proficiency.
             </div>
-            <Button text={"Download Cv"} />
+            <div onClick={cvDownload}>
+              <Button text={"Download Cv"} className="text-base md:text-lg mt-4" />
+            </div>
           </div>
 
-          <div className="right mt-10">
+          <div className="right lg:w-3/4 mt-10 order-first md:order-last">
             <video
               src="/Images/hero.mp4"
-              className="h-full w-[100vh]  rounded"
+              className="w-full md:w-[60%]  h-auto md:h-full rounded"
               loop
               autoPlay
               muted
+              playsInline  // Add this to make it work on iOS
             >
               Hello
             </video>
@@ -67,7 +98,7 @@ export default function Home() {
           >
             <path
               d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-              class="shape-fill"
+              className="shape-fill"
             ></path>
           </svg>
         </div>
@@ -78,9 +109,20 @@ export default function Home() {
       <Media />
       <Contact />
       <Footer />
-    </Fragment>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
+    </div>
   );
 }
-
-
-

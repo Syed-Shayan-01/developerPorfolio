@@ -6,34 +6,38 @@ import {
   AiOutlineInstagram,
 } from "react-icons/ai";
 import Logo from "../logo/Logo";
+
 const Media = () => {
   return (
-    <div>
-        <div className="flex justify-center items-center mb-32 mt-20">
-        <Logo text='Social Media Accounts' /> 
-        </div>
-      <ol className=" text-[3rem] flex justify-around items-center text-gray-500">
-        <li className="hover:text-red-500 drop-shadow-4xl duration-300 hover:scale-150 scale-125">
+    <div className="text-center py-10 md:py-6">
+      <div className="mb-6 md:mb-12">
+        <Logo text="Social Media Accounts" />
+      </div>
+      <ul
+        className="flex md:justify-around justify-center items-center text-4xl md:text-5xl
+       text-gray-500 space-x-6 md:space-x-8"
+      >
+        <li className="hover:text-red-500 duration-300 hover:scale-125">
           <Link href={"https://www.instagram.com/syed_m_shayan/"}>
             <AiOutlineInstagram />
           </Link>
         </li>
-        <li className="hover:text-blue-700  drop-shadow-4xl duration-300 hover:scale-150 scale-125 ">
+        <li className="hover:text-blue-700 duration-300 hover:scale-125">
           <Link href={"https://www.facebook.com/battlewar.gaming.9"}>
-            <AiFillFacebook  />
+            <AiFillFacebook />
           </Link>
         </li>
-        <li className="hover:text-black drop-shadow-4xl  duration-300 hover:scale-150 scale-125 ">
+        <li className="hover:text-black duration-300 hover:scale-125">
           <Link href={"https://github.com/Syed-Shayan-01"}>
             <AiFillGithub />
           </Link>
         </li>
-        <li className="hover:text-blue-800 drop-shadow-4xl  duration-300 hover:scale-150 scale-125">
+        <li className="hover:text-blue-800 duration-300 hover:scale-125">
           <Link href={"https://www.linkedin.com/in/thesyedshayan/"}>
             <AiFillLinkedin />
           </Link>
         </li>
-      </ol>
+      </ul>
     </div>
   );
 };
