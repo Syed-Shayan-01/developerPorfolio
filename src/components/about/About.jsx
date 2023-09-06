@@ -17,12 +17,15 @@ const About = () => {
       >
         <div className="right mx-6 lg:ml-0">
           <img
+            data-aos="fade-up"
+            data-aos-duration="3000"
             src="/Images/about.png"
             className="h-full w-full lg:w-[70ch] drop-shadow-lg"
             alt="About Image"
           />
         </div>
-        <div className="left mx-6 lg:ml-36">
+        <div data-aos="fade-down"
+            data-aos-duration="3000" className="left mx-6 lg:ml-36">
           <h1 className="text-2xl lg:text-4xl font-bold">
             <Logo text={"Prowess"} />
           </h1>

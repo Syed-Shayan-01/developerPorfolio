@@ -58,7 +58,7 @@ export default function Home() {
       {/* new section */}
       <section className="pb-32 relative bg-black">
         <div className="text-white flex justify-around items-center p-10 max-lg:flex-col">
-          <div className="left ml-4 md:ml-24">
+          <div data-aos="fade-right" className="left ml-4 md:ml-24">
             <div className="text-3xl md:text-5xl mt-4 md:mt-20 mb-4 p-2">
               Hello I, AM <Logo text={'syed shayan'} />
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="right lg:w-3/4 mt-10 order-first md:order-last">
+          <div data-aos="fade-left" className="right lg:w-3/4 mt-10 order-first md:order-last">
             <video
               src="/Images/hero.mp4"
               className="w-full md:w-[60%]  h-auto md:h-full rounded"

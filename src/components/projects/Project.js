@@ -10,7 +10,8 @@ const Project = () => {
                 <Logo text={'Projects'} />
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
-                <div className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
+                <div data-aos="fade-left"
+                    data-aos-duration="2000" className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
                     <Image
                         src="/Images/mini-hack.png"
                         className="w-full h-80 md:w-96 md:h-80"
@@ -25,7 +26,8 @@ const Project = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
+                <div data-aos="fade-right"
+                    data-aos-duration="2000" className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
                     <Image
                         src="/Images/portfolio.png"
                         className="w-full h-80 md:w-96 md:h-80"
@@ -40,7 +42,8 @@ const Project = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
+                <div data-aos="fade-left"
+                    data-aos-duration="2000" className="rounded-xl overflow-hidden shadow-xl duration-300 hover:scale-105">
                     <Image
                         src="/Images/word-count.png"
                         className="w-full h-80 md:w-96 md:h-80"
