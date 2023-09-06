@@ -16,19 +16,10 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
 html {
   scroll-behavior: smooth;
   scroll-padding: 10rem;
+  overflow-x: hidden;
 }
 
 .custom-shape-divider-bottom-1693121354 {
