@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Logo from '../logo/Logo';
+import Logo from '../../components/logo/Logo';
 
 const Project = () => {
     return (

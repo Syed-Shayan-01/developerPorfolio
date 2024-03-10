@@ -5,13 +5,13 @@ import Logo from '../logo/Logo'
 const Footer = () => {
   return (
     <footer className="flex items-center justify-around my-10 max-md:flex-col">
-      <div  className="text-xl sm:text-3xl font-bold mb-4 ">
+      <div className="text-xl sm:text-3xl font-bold mb-4 ">
         <Logo text={'Syed Shayan'} />
       </div>
-      <div  className="text-sm mt-2 sm:mt-0">
+      <div className="text-sm mt-2 sm:mt-0">
         Shayan 2023 all rights reserved
       </div>
-      <ul  className="flex space-x-8 mt-2 sm:mt-0 text-2xl">
+      <ul className="flex space-x-8 mt-2 sm:mt-0 text-2xl">
         <li>
           <Link href="https://www.instagram.com/syed_m_shayan/">
             <span className="text-gray-500 hover:text-blue-500">

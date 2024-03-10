@@ -6,7 +6,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { GiBulletImpacts } from "react-icons/gi";
-import Logo from "../logo/Logo";
+import Logo from "../../components/logo/Logo";
 
 const About = () => {
   return (

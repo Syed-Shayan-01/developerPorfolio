@@ -1,5 +1,5 @@
-import Button from "../Button";
-import Logo from "../logo/Logo";
+import Button from "../src/components/button/Button";
+import Logo from "../src/components/logo/Logo";
 
 const Contact = () => {
     return (

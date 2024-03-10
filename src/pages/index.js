@@ -1,15 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import Button from "@/components/Button";
-import About from "@/components/about/About";
-import Contact from "@/components/contact/Contact";
-import Footer from "@/components/footer/Footer";
-import Logo from "@/components/logo/Logo";
-import Project from "@/components/projects/Project";
-import Media from "@/components/socialMedia/Media";
 import Link from "next/link";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/router";
+import About from "./about/About";
+import Project from "./projects/Project";
+import Media from "@/components/socialMedia/Media";
+import Contact from "../../contact/Contact";
+import Footer from "@/components/footer/Footer";
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
   const router = useRouter();
