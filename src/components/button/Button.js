@@ -1,5 +1,4 @@
 
-
 const Button = ({ text }) => {
   return (
     <button className="text-white duration-300 hover:scale-105 hover:bg-white
