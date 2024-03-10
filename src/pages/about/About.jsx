@@ -15,14 +15,25 @@ const About = () => {
         id="about"
         className="flex flex-col lg:flex-row justify-around items-center mt-10 lg:mt-40"
       >
-        <div className="right mx-6 lg:ml-0">
+        <div
+          data-aos="fade-up-down"
+          data-aos-offset="350"
+          delay="1000"
+          data-aos-easing="ease-in-sine"
+          className="right mx-6 lg:ml-0"
+        >
           <img
             src="/Images/about.png"
             className="h-full w-full lg:w-[70ch] drop-shadow-lg"
             alt="About Image"
           />
         </div>
-        <div className="left mx-6 lg:ml-36">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          className="left mx-6 lg:ml-36"
+        >
           <h1 className="text-2xl lg:text-4xl font-bold">
             <Logo text={"Prowess"} />
           </h1>

@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 html {
   scroll-behavior: smooth;
   scroll-padding: 10rem;
@@ -43,12 +29,11 @@ html {
   fill: #ffffff;
 }
 
-
 .logo {
   font-family: Arial, sans-serif;
   font-size: 36px;
   font-weight: bold;
-  color: #007BFF; /* Change the color as desired */
+  color: #007bff; /* Change the color as desired */
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */

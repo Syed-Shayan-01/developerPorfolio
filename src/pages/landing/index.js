@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Button from "@/components/Button";
+import Button from "@/components/button/Button";
 import About from "@/pages/about/About";
 import Contact from "../contact/Contact";
 import Footer from "@/components/footer/Footer";
@@ -10,10 +10,16 @@ import Link from "next/link";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/router";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
     const router = useRouter();
 
+    useEffect(() => {
+        AOS.init();
+    }, [])
     const cvDownload = () => {
         toast.info('lets open the resume!', {
             position: "top-left",
@@ -58,7 +64,7 @@ export default function Home() {
             {/* new section */}
             <section className="pb-32 relative bg-black">
                 <div className="text-white flex justify-around items-center p-10 max-lg:flex-col">
-                    <div data-aos="fade-right" className="left ml-4 md:ml-24">
+                    <div className="left ml-4 md:ml-24">
                         <div className="text-3xl md:text-5xl mt-4 md:mt-20 mb-4 p-2">
                             Hello I, AM <Logo text={'syed shayan'} />
                         </div>
@@ -71,11 +77,15 @@ export default function Home() {
                             dynamic and responsive web applications with proficiency.
                         </div>
                         <div onClick={cvDownload}>
-                            <Button text={"Download Cv"} className="text-base md:text-lg mt-4" />
+                            <Button data-aos="fade-up"
+                                data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" text={"Download Cv"} className="text-base md:text-lg mt-4" />
                         </div>
                     </div>
 
-                    <div data-aos="fade-left" className="right lg:w-3/4 mt-10 order-first md:order-last">
+                    <div data-aos="zoom-in"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" className="right lg:w-3/4 mt-10 order-first md:order-last">
                         <video
                             src="/Images/hero.mp4"
                             className="w-full md:w-[60%]  h-auto md:h-full rounded"

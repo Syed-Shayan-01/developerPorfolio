@@ -3,13 +3,13 @@ import Logo from "../../components/logo/Logo";
 
 const Contact = () => {
     return (
-        <section id="Contact" className="bg-white mt-10 sm:mt-16 md:mt-20 lg:mt-40">
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <section  id="Contact" className="bg-white my-[6rem]">
+            <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-3xl sm:text-4xl lg:text-5xl tracking-tight font-extrabold text-center text-gray-400">
                     <Logo text={'Contact us'} />
                 </h2>
                 <p className="mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-lg">
-                    Got a technical issue? Want to send feedback about a beta feature? Let us know.
+                    Hello Friends, Contact with me! If you have any questions
                 </p>
                 <form action="#" className="space-y-8">
                     <div>
