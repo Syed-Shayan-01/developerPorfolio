@@ -38,7 +38,7 @@ export default function Home() {
 
     return (
         <div id="/">
-          <Nav />
+            <Nav />
             {/* End Header Section */}
 
             {/* new section */}
