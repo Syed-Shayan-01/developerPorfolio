@@ -9,6 +9,14 @@ import { GiBulletImpacts } from "react-icons/gi";
 import Logo from "../../components/logo/Logo";
 
 const About = () => {
+  const aboutPoints = [
+    "MERN Stack Developer: React.js, Node.js, Express.js, MongoDB.",
+    "React.js Specialist: Creates dynamic interfaces for superior user experiences.",
+    "Node.js Expert: Ensures smooth server-side operations with Express.js.",
+    "MongoDB Management: Maintains data integrity and optimizes queries.",
+    "Tailwind CSS Styling: Rapid, consistent styling across projects.",
+    "Next.js Implementation: Enhances SEO and performance with client-server rendering.",
+  ];
   return (
     <div className="container mx-auto">
       <section
@@ -17,8 +25,8 @@ const About = () => {
       >
         <div
           data-aos="fade-up-down"
-          data-aos-offset="350"
-          delay="1000"
+          data-aos-offset="400"
+          delay="1500"
           data-aos-easing="ease-in-sine"
           className="right mx-6 lg:ml-0"
         >
@@ -28,20 +36,30 @@ const About = () => {
             alt="About Image"
           />
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          className="left mx-6 lg:ml-36"
-        >
-          <h1 className="text-2xl lg:text-4xl font-bold">
+        <div className="left mx-6 lg:ml-36">
+          <h1
+            className="text-2xl lg:text-4xl font-bold"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <Logo text={"Prowess"} />
           </h1>
           <div>
-            <div className="text-xl lg:text-3xl text-gray-400">
-              I AM A FRONT-END WEB DEVELOPER
+            <div
+              className="text-xl lg:text-3xl text-gray-400"
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              I AM A WEB DEVELOPER
             </div>
-            <span className="flex items-center text-3xl lg:text-5xl my-3 space-x-5 cursor-pointer text-gray-400">
+            <span
+              data-aos="fade-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+              className="flex items-center text-3xl lg:text-5xl my-3 space-x-5 cursor-pointer text-gray-400"
+            >
               <AiFillHtml5 className="hover:text-blue-500" />
               <FaCss3Alt className="hover:text-blue-500" />
               <IoLogoJavascript className="hover:text-blue-500" />
@@ -49,20 +67,21 @@ const About = () => {
               <AiFillGithub className="hover:text-blue-500" />
               <BiLogoTailwindCss className="hover:text-blue-500" />
             </span>
-            <ol className="font-sans">
-              <li className="text-xl lg:text-2xl text-gray-500">
-                <GiBulletImpacts className="text-xl lg:text-2xl text-yellow-500 inline-flex items-center" />{" "}
-                I design front-end in terms of user interface
-              </li>
-              <li className="text-xl lg:text-2xl py-2 text-gray-500">
-                <GiBulletImpacts className="text-xl lg:text-2xl text-yellow-500 inline-flex items-center" />{" "}
-                I do website designing by TAILWIND CSS
-              </li>
-              <li className="text-xl lg:text-2xl text-gray-500">
-                <GiBulletImpacts className="text-xl lg:text-2xl text-yellow-500 inline-flex items-center" />{" "}
-                I also use the API to communicate with the frontend and backend
-                in Next.js
-              </li>
+            <ol>
+              {aboutPoints.map((items, index) => {
+                return (
+                  <li
+                    key={`${items}-${index}`}
+                    className="lg:text-[1.3rem] text-[1.2rem] py-[4px] text-gray-500"
+                    data-aos="fade-up"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <GiBulletImpacts className="text-xl lg:text-2xl text-yellow-500 inline-flex items-center" />{" "}
+                    {items}
+                  </li>
+                );
+              })}
             </ol>
           </div>
         </div>

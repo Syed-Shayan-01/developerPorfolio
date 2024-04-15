@@ -48,10 +48,10 @@ export default function Home() {
                         <div className="text-3xl md:text-5xl mt-4 md:mt-20 mb-4 p-2">
                             Hello I, AM <Logo text={'syed shayan'} />
                         </div>
-                        <span className="text-lg md:text-xl text-gray-300 mt-6 md:mt-10 uppercase p-2">
+                        <span className="text-sm md:text-xl text-gray-300 mt-6 md:mt-10 uppercase p-2">
                             I am a Passionate Front-End Web Developer
                         </span>
-                        <div className="p-2 lg:w-3/4 text-base md:text-lg text-gray-200 font-sans">
+                        <div className="p-2 text-lg lg:w-3/4 text-justify md:text-lg text-gray-200 font-sans">
                             I possess one year of experience in HTML, CSS, JavaScript,
                             Git/GitHub, Tailwind CSS, and Next.js, enabling me to create
                             dynamic and responsive web applications with proficiency.
