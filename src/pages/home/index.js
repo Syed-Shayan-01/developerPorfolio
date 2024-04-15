@@ -6,13 +6,13 @@ import Footer from "@/components/footer/Footer";
 import Logo from "@/components/logo/Logo";
 import Project from "@/pages/projects/Project";
 import Media from "@/components/socialMedia/Media";
-import Link from "next/link";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/router";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import Nav from "@/components/navbar/Navbar";
 /* eslint-disable @next/next/no-img-element */
 export default function Home() {
     const router = useRouter();
@@ -38,27 +38,7 @@ export default function Home() {
 
     return (
         <div id="/">
-            <div className="bg-black">
-                <header className="flex justify-between items-center p-10 flex-col md:flex-row max-md:justify-center">
-                    <div className="text-sm text-center">
-                        <Logo text={'Syed SHayan'} />
-                    </div>
-
-                    <nav>
-                        <ul className="flex flex-col md:flex-row justify-center items-center text-white md:space-x-20 hover:cursor-pointer text-[1.5rem]">
-                            <li className="hover:text-blue-500 duration-500">
-                                <Link href={'#about'}>Skills</Link>
-                            </li>
-                            <li className="hover:text-blue-500 duration-500">
-                                <Link href={'#Projects'}>Projects</Link>
-                            </li>
-                            <li className="hover:text-blue-500 duration-500">
-                                <Link href={'#Contact'}>Contact us</Link>
-                            </li>
-                        </ul>
-                    </nav>
-                </header>
-            </div>
+          <Nav />
             {/* End Header Section */}
 
             {/* new section */}

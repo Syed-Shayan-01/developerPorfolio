@@ -1,5 +1,4 @@
-import Home from "./landing"
-
+import Home from "./home"
 const index = () => {
   return (
     <>
