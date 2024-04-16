@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Full Stack Madarsa Website",
+        "description": "I CREATED MADARSA WEBSITE USING NEXT JS APP ROUTER",
+        "links": "https://alquran-academy.vercel.app/",
+        "hashtags": "#nextjs"
+    },
+    {
+        "name": "Student Attendance Admin Panel",
+        "description": "I CREATED STUDENT ATTENDANCE APPUSING NEXTJS",
+        "links": "https://shayan-attend.vercel.app/",
+        "hashtags": "#nodejs, #expressjs, #nextjs, #mongodb"
+    },
+    {
+        "name": "Mini Hackton SMIT",
+        "description": "I CREATED BLOG APP IN SMIT MINI HACKTON USING NEXT JS",
+        "links": "https://github.com/Syed-Shayan-01",
+        "hashtags": "#nextjs"
+    },
+    {
+        "name": "Simple Portfolio",
+        "description": "I CREATED SIMPLE PORTFOLIO USING NEXTJS",
+        "links": "https://tailwind-app-snowy.vercel.app/",
+        "hashtags": "#nextjs"
+    },
+    {
+        "name": "Word Counter App",
+        "description": "I CREATED Word Counter USING NEXTJS",
+        "links": "https://word-counter-nextjs.vercel.app/",
+        "hashtags": "#nextjs"
+    }
+]
