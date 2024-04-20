@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import Button from "@/components/button/Button";
-import About from "@/pages/about/About";
-import Contact from "../contact/Contact";
+import About from "@/pages/about";
+import Contact from "../contact/";
 import Footer from "@/components/footer/Footer";
 import Logo from "@/components/logo/Logo";
-import Project from "@/pages/projects/Project";
+import Project from "@/pages/projects/";
 import Media from "@/components/socialMedia/Media";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

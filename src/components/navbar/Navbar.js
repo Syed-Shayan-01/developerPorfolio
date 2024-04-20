@@ -26,17 +26,17 @@ export default function Nav() {
 
             <NavbarContent className="hidden sm:flex gap-4" justify="center">
                 <NavbarItem>
-                    <Link className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" href="#about">
+                    <Link className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" href="/#about">
                         Skills
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link href="#Projects" className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" aria-current="page">
+                    <Link href="/#Projects" className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" aria-current="page">
                         Projects
                     </Link>
                 </NavbarItem>
                 <NavbarItem>
-                    <Link className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" href="#Contact">
+                    <Link className="text-white text-[1.3rem] mx-4 hover:text-blue-500 font-semibold duration-500" href="/#Contact">
                         Contact us
                     </Link>
                 </NavbarItem>
@@ -58,3 +58,4 @@ export default function Nav() {
         </Navbar>
     );
 }
+
