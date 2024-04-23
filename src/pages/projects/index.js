@@ -24,7 +24,7 @@ const Project = () => {
                         >
                             <Image
                                 className="w-full h-[20vh] object-cover hover:scale-75 duration-300"
-                                src={'/images/portfolio.png'}
+                                src={'/Images/portfolio.png'}
                                 width="400"
                                 height="200"
                             />
