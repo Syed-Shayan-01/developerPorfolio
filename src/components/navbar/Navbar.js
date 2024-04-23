@@ -20,7 +20,7 @@ export default function Nav() {
                     className="sm:hidden text-white hover:text-blue-400 "
                 />
                 <NavbarBrand className="max-md:text-center">
-                    <Logo text={'shayan'}  />
+                    <Logo text={'shayan'} />
                 </NavbarBrand>
             </NavbarContent>
 
@@ -42,16 +42,16 @@ export default function Nav() {
                 </NavbarItem>
             </NavbarContent>
 
-            <NavbarMenu>
+            <NavbarMenu className="bg-black" style={{ maxHeight: "50vh" }}>
                 {menuItems.map((item, index) => (
-                    <NavbarMenuItem  key={`${item}-${index}`}>
+                    <NavbarMenuItem className="uppercase mt-4 " key={`${item}-${index}`}>
                         <Link
-                            className="w-full text-[1.2rem] text-black hover:text-blue-500 duration-500" 
                             href={`#${item}`}
-                            size="lg"
+                            className="text-white text-[1.2rem] hover:text-blue-500 duration-500 "
                         >
                             {item}
                         </Link>
+                        <div className="border mt-1"></div>
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
