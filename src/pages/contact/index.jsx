@@ -3,7 +3,7 @@ import Logo from "../../components/logo/Logo";
 
 const Contact = () => {
     return (
-        <section  id="Contact" className="bg-white my-[6rem]">
+        <section  id="Contact" className="bg-white my-[5rem]">
             <div className="py-4 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-3xl sm:text-4xl lg:text-5xl tracking-tight font-extrabold text-center text-gray-400">
                     <Logo text={'Contact us'} />

@@ -9,11 +9,14 @@ import Logo from "../logo/Logo";
 
 const Media = () => {
   return (
-    <div className="text-center py-10 md:py-6">
+    <div className="text-center mt-14">
       <div className="mb-6 md:mb-12">
         <Logo text="Social Media Accounts" />
       </div>
       <ul
+        data-aos="zoom-in"
+        data-aos-delay="500"
+        data-aos-easing="ease-in-sine"
         className="flex md:justify-around justify-center items-center text-4xl md:text-5xl
        text-gray-500 space-x-6 md:space-x-8"
       >

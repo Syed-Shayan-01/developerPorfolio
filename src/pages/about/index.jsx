@@ -86,7 +86,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className="h-0.5 w-full lg:w-[max] my-10 lg:my-40 bg-gray-400"></div>
+      <div className="h-0.5 w-full lg:w-[max] my-10 lg:my-[8rem] bg-gray-400"></div>
     </div>
   );
 };
